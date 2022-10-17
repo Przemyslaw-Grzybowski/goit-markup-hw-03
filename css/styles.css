@@ -14,8 +14,22 @@ body {
     margin: 0 auto;
     width: 100%;
     max-width: 1600px;
+    /* Jeśli wstawię 1200 to WSZYSTKO się rozjeżdża*/
     padding: 0 15px;
 }
+
+/* Subtitle to klasa dla h2*/
+
+.subtitle {
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/* HEADER */
 
 .header-top {
     display: flex;
@@ -111,6 +125,10 @@ body {
     color: var(--active-color);
     outline: none;
 }
+
+/* MAIN */
+/* Pierwsza sekcja */
+
 .motto {
     background: #2f303a;
     padding: 94px;
@@ -122,6 +140,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -141,8 +160,10 @@ body {
     font-size: 16px;
     line-height: 1.86;
     border-radius: 4px;
+    padding: 0px;
     margin-bottom: 193px;
     margin: auto;
+    margin-bottom: 200px;
     height: 50px;
     width: 200px;
 
@@ -153,14 +174,11 @@ body {
     color: #ffffff;
 }
 
-.subtitle {
-    font-size: 36px;
-    line-height: 1.7;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
+/* Druga sekcja */
+
 .lorem {
     padding: 94px;
+    padding-bottom: 0px;
 }
 .lorem-descrp {
     list-style: none;
@@ -182,6 +200,9 @@ body {
     color: #757575;
     width: 270px;
 }
+
+/* Trzecia sekcja*/
+
 .what-we-do {
     padding: 94px;
 }
@@ -192,9 +213,11 @@ body {
     gap: 30px;
     padding-left: 0px;
 }
+
+/* Czwarta sekcja*/
+
 .nasz-zespol {
     background-color: #f5f4fa;
-    height: 648px;
     padding: 94px;
 }
 .zespol {
@@ -231,32 +254,15 @@ body {
 
     color: #757575;
 }
-.button {
-    border: none;
-    cursor: pointer;
 
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    border-radius: 4px;
-}
-.button:hover {
-    background-color: var(--active-color);
-    color: #ffffff;
-}
-.button:focus {
-    background-color: var(--active-color);
-    color: #ffffff;
-    outline: none;
-}
-.button:active {
-    background-color: var(--active-color);
-}
+/* FOOTER */
 
 .footer {
     background-color: var(--bcg1-color);
     height: 252px;
+}
+.footer-format {
+    padding-top: 60px;
 }
 .logo-f {
     font-family: "Raleway";
@@ -268,11 +274,10 @@ body {
     color: var(--default-color);
 
     margin-left: 215px;
-    padding-top: 60px;
+
     margin-right: 1240px;
     margin-bottom: 20px;
 }
-
 .logo-f:visited {
     color: var(--default-color);
 }
@@ -281,7 +286,9 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 0px;
+    margin-top: 20px;
     margin-left: 215px;
+    margin-bottom: 60px;
     gap: 9px;
 }
 .place {
@@ -316,9 +323,59 @@ body {
     color: var(--active-color);
     outline: none;
 }
+
+/* druga strona */
+/* MAIN*/
+
+/* przyciski */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 94px 518px 50px 510px;
+}
+.button {
+    border: none;
+    cursor: pointer;
+    display: block;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    width: 91px;
+    border-radius: 4px;
+    padding: 0px 0px;
+}
+.button:hover {
+    background-color: var(--active-color);
+    color: #ffffff;
+}
+.button:focus {
+    background-color: var(--active-color);
+    color: #ffffff;
+    outline: none;
+}
+.button:active {
+    background-color: var(--active-color);
+}
+
+/* Obrazy */
+
 .projects {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.info-block-two {
+    width: 270px;
+    height: 368px;
+    left: 515px;
+    top: 1635px;
+
+    background: #ffffff;
 }
 .proj-title {
     font-weight: 500;
@@ -336,9 +393,4 @@ body {
     letter-spacing: 0.03em;
 
     color: #757575;
-}
-
-.navigation {
-    display: flex;
-    justify-content: center;
 }
