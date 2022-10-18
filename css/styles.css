@@ -377,7 +377,6 @@ body {
 }
 .info-block-two {
     flex-basis: calc((100% - 60px) / 3);
-
     background: #ffffff;
 }
 .borderline {
@@ -400,7 +399,7 @@ body {
     width: 322px;
     height: 36px;
     padding: 0px;
-    margin: 20px 54px 4px 24px;
+    margin: 20px 30px 4px 24px;
 }
 .proj-description {
     display: block;
@@ -408,7 +407,7 @@ body {
     line-height: 1.89;
     text-align: left;
     letter-spacing: 0.03em;
-    margin: 4px 54px 20px 24px;
+    margin: 4px 24px 20px 24px;
 
     color: #757575;
 }
