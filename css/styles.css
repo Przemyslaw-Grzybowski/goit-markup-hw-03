@@ -34,6 +34,7 @@ body {
 .header-top {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .top-part {
@@ -366,31 +367,48 @@ body {
 .projects {
     list-style: none;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    padding-left: 0px;
+    margin: 0 auto;
+    align-content: center;
+    padding-bottom: 94px;
 }
 .info-block-two {
-    width: 270px;
-    height: 368px;
-    left: 515px;
-    top: 1635px;
+    flex-basis: calc((100% - 60px) / 3);
 
     background: #ffffff;
 }
+.borderline {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.picture {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 .proj-title {
-    font-weight: 500;
+    display: block;
+    font-weight: 700;
     font-size: 18px;
     line-height: 1.89;
-
-    text-align: center;
-    letter-spacing: 0.03em;
+    text-align: left;
+    letter-spacing: 0.06em;
+    color: var(--default-color);
+    width: 322px;
+    height: 36px;
+    padding: 0px;
+    margin: 20px 54px 4px 24px;
 }
 .proj-description {
+    display: block;
     font-size: 16px;
     line-height: 1.89;
-
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.03em;
+    margin: 4px 54px 20px 24px;
 
     color: #757575;
 }
