@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --active-color: #2196f3;
     --bcg2-color: #f5f4fa;
@@ -8,7 +15,12 @@
 body {
     font-family: "Roboto", sans-serif;
     color: var(--default-color);
-    max-width: 100%;
+    width: 100%;
+    width: 1600px;
+}
+
+.section {
+    padding: 94px 0px;
 }
 
 .container {
@@ -25,11 +37,14 @@ body {
     line-height: 1.7;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    margin: 0px;
 }
 
 /* HEADER */
+.header-style {
+    width: 1600px;
+}
 
 .header-top {
     display: flex;
@@ -69,7 +84,6 @@ body {
     flex-wrap: wrap;
     padding-left: 0px;
     margin-top: 32px;
-    margin-right: 364px;
     margin-bottom: 32px;
     gap: 46px;
 }
@@ -131,7 +145,6 @@ body {
 
 .motto {
     background-color: var(--bcg1-color);
-    padding: 94px;
 }
 .motto-text {
     font-weight: 900;
@@ -140,12 +153,12 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 200px;
+
+    padding: 0px 252px 30px 252px;
+
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     color: #ffffff;
-    width: 696px;
 }
 
 .button-two {
@@ -161,11 +174,10 @@ body {
     line-height: 1.86;
     border-radius: 4px;
     padding: 0px;
-    margin-bottom: 193px;
+
     margin: auto;
-    margin-bottom: 200px;
-    height: 50px;
-    width: 200px;
+
+    padding: 10px 41px;
 
     align-items: center;
     text-align: center;
@@ -176,10 +188,6 @@ body {
 
 /* Druga sekcja */
 
-.lorem {
-    padding: 94px;
-    padding-bottom: 0px;
-}
 .lorem-descrp {
     list-style: none;
     display: flex;
@@ -218,7 +226,6 @@ body {
 
 .nasz-zespol {
     background-color: #f5f4fa;
-    padding: 94px;
 }
 .zespol {
     list-style: none;
@@ -239,6 +246,8 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    padding-top: 30px;
+    padding-bottom: 10px;
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -249,6 +258,7 @@ body {
 
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
 
     color: #757575;
 }
@@ -257,11 +267,8 @@ body {
 
 .footer {
     background-color: var(--bcg1-color);
-    height: 252px;
 }
-.footer-format {
-    padding-top: 60px;
-}
+
 .logo-f {
     font-family: "Raleway";
     font-weight: 700;
@@ -270,9 +277,6 @@ body {
     text-decoration: none;
 
     color: var(--default-color);
-
-    margin-right: 1240px;
-    margin-bottom: 20px;
 }
 .logo-f:visited {
     color: var(--default-color);
@@ -282,8 +286,6 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 0px;
-    margin-top: 20px;
-    margin-bottom: 60px;
     gap: 9px;
 }
 .place {
@@ -326,11 +328,11 @@ body {
 
 .navigation {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     height: 38px;
     gap: 8px;
-    margin-top: 94px;
-    margin-bottom: 50px;
 }
 .button {
     border: none;
@@ -341,9 +343,8 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    width: 91px;
     border-radius: 4px;
-    padding: 0px 0px;
+    padding: 10px 41px;
 }
 .button:hover {
     background-color: var(--active-color);
@@ -371,9 +372,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 0px;
-    padding-bottom: 94px;
+    margin: 0px;
     gap: 30px;
 }
 .info-block-two {
@@ -382,10 +383,6 @@ body {
     width: 370px;
 }
 .borderline {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
     border: 1px solid #eeeeee;
 }
 
