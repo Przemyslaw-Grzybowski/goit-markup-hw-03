@@ -16,7 +16,6 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--default-color);
     width: 100%;
-    width: 1600px;
 }
 
 .section {
@@ -42,9 +41,6 @@ body {
 }
 
 /* HEADER */
-.header-style {
-    width: 1600px;
-}
 
 .header-top {
     display: flex;
@@ -211,9 +207,6 @@ body {
 
 /* Trzecia sekcja*/
 
-.what-we-do {
-    padding: 94px;
-}
 .bau {
     list-style: none;
     display: flex;
@@ -376,6 +369,7 @@ body {
     padding-left: 0px;
     margin: 0px;
     gap: 30px;
+    padding-bottom: 94px;
 }
 .info-block-two {
     flex-basis: calc((100% - 60px) / 3);
